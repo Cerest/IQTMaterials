@@ -30,9 +30,9 @@ This will be done automatically for you if you right click on a name --> hover o
 
 ## Classes ##
 
-https://www.tutorialsteacher.com/csharp/csharp-class
-https://www.tutorialsteacher.com/csharp/csharp-interface
-https://www.tutorialspoint.com/csharp/csharp_interfaces.htm
+* https://www.tutorialsteacher.com/csharp/csharp-class
+* https://www.tutorialsteacher.com/csharp/csharp-interface
+* https://www.tutorialspoint.com/csharp/csharp_interfaces.htm
 
 Please read all material prior to the start of this exercise.  Comment all code (Classes, functions, fields, attributes, etc.) as shown in the general programming knowledge section.
 
