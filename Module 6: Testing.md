@@ -9,6 +9,7 @@ This seems like an esoteric concept. So before we demonstrate how to do TDD, let
 
 This lesson will be broken into the following sections
 * Writing Tests with C#
+* TDD Methodology
 * C# TDD 
 * Mocking in C#
 
@@ -49,15 +50,18 @@ namespace ClassesTest
 6. Now we get into the testing. All testing frameworks use an Assert command. On a new line, type `Assert.` and look through the tool tips. Did you find a command to see whether or not wo values were equal?
 6. Your GetAreaTest should now look like the following,
 ```
-	[TestMethod]
-	public void GetAreaTest()
-	{
-		var nameOfTriangle = new Triangle(3,4,5);
-		int expected = QWUICKMAFS;
-		double actual = nameOfTriangle.GetArea();
-		Assert.FINDTHECORRECTCOMMAND(expected, actual);
-	}
+[TestMethod]
+public void GetAreaTest()
+{
+	var nameOfTriangle = new Triangle(3,4,5);
+	int expected = QWUICKMAFS;
+	double actual = nameOfTriangle.GetArea();
+	Assert.FINDTHECORRECTCOMMAND(expected, actual);
+}
  ```
-6. To run this. On the top bar, go to Tests --> Run All Tests. And hopefully there should be green checkboxes.
-6. We are not done. NONE of his was TDD. This was just simply demonstrating how to do the most basic of tests.
+6. Don't forget to **comment!** To run this. On the top bar, go to Tests --> Run All Tests. And hopefully there should be green checkboxes.
 6. Write a test that verifies that the area of a circle with radius `2/sqrt(pi)` is what you think it is to verify that your implementation of GetArea for Circle is correct.
+6. We are not done. NONE of his was TDD. This was just simply demonstrating how to do the most basic of tests.
+
+## TDD Methodology ##
+To save time, please read this article, https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80. 
