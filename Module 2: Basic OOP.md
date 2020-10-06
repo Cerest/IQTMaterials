@@ -41,7 +41,7 @@ Please ensure you are compiling and running the code in debug mode.  See the fol
 * https://docs.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2019
 
 
-1.	Create a new console application on .NET Core and name it classes.
+1.	Create a new console application on .NET Core and name it Classes.
 1.	Add a new class to the solution.  Use the IDE to rename the class to Circle.
 1.	Add the public modifier to the class definition.  Note: Classes are set to the internal by default.  See https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers#
 1.	Add one field to the Circle class.  It should use the private access modifier and be type double.  Name it radius.
