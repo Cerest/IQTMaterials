@@ -48,7 +48,7 @@ Please ensure you are compiling and running the code in debug mode.  See the fol
 5.	Next create a default constructor.  Use this to set the radius to zero.  Note:  See the following link for more information about constructors https://www.geeksforgeeks.org/c-sharp-constructors/
 6.	Next create a parameterized constructor with one parameter.  The parameter will be a type double and is the radius.
 7.	Next create a public function called GetArea that returns a double value.  Use this function to define how to calculate a circle using the radius.  The calculation can be found at the following link https://www.mathsisfun.com/geometry/circle-area.html.
-8.	Go to the file Program.cs.  Delete the Console.WriteLine(“Hello World!”); line of code.
+8.	Go to the file Program.cs.  Delete the `Console.WriteLine(“Hello World!”);` line of code.
 9.	Instantiate two instances of the Circle class with one using the default constructor and the other using the parameterized constructor.
 10.	Print the areas of both Circle objects to the console window.  Please format the double to only print two decimal places of the double value.
 11.	Compile and run.
@@ -62,7 +62,7 @@ Please ensure you are compiling and running the code in debug mode.  See the fol
 ## Interfaces ## 
 
 1.	Add a new class to the solution.  Use the IDE to rename the class to IShape.
-2.	Change the line that says “class IShape” to “interface IShape”.
+2.	Change the line that says `class IShape` to `interface IShape`.
 3.	Create a declaration for a function called GetArea with a double for the return type.
 4.	Go to the Circle class.  Have the circle class inherit from the IShape class.
 5.	Go to the program class.  Create an instance of the IShape interface using the Circle class.  Print the area of the new circle that was declared.  Please format the double to only print two decimal places of the double value.
