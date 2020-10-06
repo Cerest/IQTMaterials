@@ -19,7 +19,7 @@ Before we jump into TDD, it's helpful to understand what testing is first. Airme
 1. In Visual Studio, open the project that you created back in Module 2. It should be named `Classes`.
 1. After opening that solution, on the File Menu, go to Add --> New Project and search for the MSTest Test Project option for .NET Core.
 1. Click Next and name the project ClassesTest. Click Create. You might notice in the solution explorer of Visual Studio that there now exists a new seperate section for ClassesTest. It should have something that appears like a chemistry beaker as an icon.
-1. Under ClassesTest in the solution explorer, right click on dependencies and click on "Add Project Reference on the solution explorer.
+1. Under ClassesTest in the solution explorer, right click on dependencies and click on "Add Project Reference" on the solution explorer.
 1. Click on Projects and then select Classes. Let us look at the newly created UnitTest1.cs class file that we just created.
 
 ```
