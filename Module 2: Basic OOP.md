@@ -42,46 +42,46 @@ Please ensure you are compiling and running the code in debug mode.  See the fol
 
 
 1.	Create a new console application on .NET Core and name it classes.
-2.	Add a new class to the solution.  Use the IDE to rename the class to Circle.
-3.	Add the public modifier to the class definition.  Note: Classes are set to the internal by default.  See https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers#
-4.	Add one field to the Circle class.  It should use the private access modifier and be type double.  Name it radius.
-5.	Next create a default constructor.  Use this to set the radius to zero.  Note:  See the following link for more information about constructors https://www.geeksforgeeks.org/c-sharp-constructors/
-6.	Next create a parameterized constructor with one parameter.  The parameter will be a type double and is the radius.
-7.	Next create a public function called GetArea that returns a double value.  Use this function to define how to calculate a circle using the radius.  The calculation can be found at the following link https://www.mathsisfun.com/geometry/circle-area.html.
-8.	Go to the file Program.cs.  Delete the `Console.WriteLine(“Hello World!”);` line of code.
-9.	Instantiate two instances of the Circle class with one using the default constructor and the other using the parameterized constructor.
-10.	Print the areas of both Circle objects to the console window.  Please format the double to only print two decimal places of the double value.
-11.	Compile and run.
-12.	Notice the Circle instance using the default constructor Area is equal to zero.  There is no way programmatically to change this without changing how changing the Circle class was instantiated.
-13.	Go to the circle class.  Add a property with the public access modifier and with a type of double called Radius.
-14.	Implement only the set accessor of the Radius property.  Doing this will make this property write-only.  For more information about properties see the following link:  https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties
-15.	Go to the program class.  Add a line of code below the where the default constructor is and change the value of the Circle’s radius of its area using the Radius property.
-16.	Compile and run.
-17.	You now have the ability to change the change the radius of the circle utilizing properties in the class.
+1.	Add a new class to the solution.  Use the IDE to rename the class to Circle.
+1.	Add the public modifier to the class definition.  Note: Classes are set to the internal by default.  See https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers#
+1.	Add one field to the Circle class.  It should use the private access modifier and be type double.  Name it radius.
+1.	Next create a default constructor.  Use this to set the radius to zero.  Note:  See the following link for more information about constructors https://www.geeksforgeeks.org/c-sharp-constructors/
+1.	Next create a parameterized constructor with one parameter.  The parameter will be a type double and is the radius.
+1.	Next create a public function called GetArea that returns a double value.  Use this function to define how to calculate a circle using the radius.  The calculation can be found at the following link https://www.mathsisfun.com/geometry/circle-area.html.
+1.	Go to the file Program.cs.  Delete the `Console.WriteLine(“Hello World!”);` line of code.
+1.	Instantiate two instances of the Circle class with one using the default constructor and the other using the parameterized constructor.
+1.	Print the areas of both Circle objects to the console window.  Please format the double to only print two decimal places of the double value.
+1.	Compile and run.
+1.	Notice the Circle instance using the default constructor Area is equal to zero.  There is no way programmatically to change this without changing how changing the Circle class was instantiated.
+1.	Go to the circle class.  Add a property with the public access modifier and with a type of double called Radius.
+1.	Implement only the set accessor of the Radius property.  Doing this will make this property write-only.  For more information about properties see the following link:  https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties
+1.	Go to the program class.  Add a line of code below the where the default constructor is and change the value of the Circle’s radius of its area using the Radius property.
+1.	Compile and run.
+1.	You now have the ability to change the change the radius of the circle utilizing properties in the class.
 
 ## Interfaces ## 
 
 1.	Add a new class to the solution.  Use the IDE to rename the class to IShape.
-2.	Change the line that says `class IShape` to `interface IShape`.
-3.	Create a declaration for a function called GetArea with a double for the return type.
-4.	Go to the Circle class.  Have the circle class inherit from the IShape class.
-5.	Go to the program class.  Create an instance of the IShape interface using the Circle class.  Print the area of the new circle that was declared.  Please format the double to only print two decimal places of the double value.
-6.	Compile and run.  The new instance of IShape circle shall display the area of the circle.  The IShape interface defines how we will interact with the Circle class and any future class that inherit from IShape.
-7.	Find the Circle instance that uses IShape.  On new line type the variable followed by the ‘.’ character.  Notice the Radius property is no longer available.  That is because this instance is of type IShape and not of type Circle.  Delete this line of code.
-8.	Add a new class and name it Triangle.
-9.	Add the public class modifier to the Triangle class and have the class inherit from IShape.
-10.	Compile the application.  An error shall be displayed saying “’Triangle’ does not implement interface.
-11.	Add three fields to the triangle class.  All should be of type double.  Name them sideA, sideB, and sideC.
-12.	Create an parameterized constructor which will set the three fields above.
-13.	Implement the GetArea function to satisfy the IShape interface.  Use the following equation to get the area of the triangle https://www.mathsisfun.com/geometry/herons-formula.html.
-14.	Go to the program class.  Create an instance of the IShape interface using the Triangle class.  Print the area of the triangle that was declared.  Please format the double to only print two decimal places of the double value.
-15.	Compile and run the application.  The application will display the area of circles and triangles.
-16.	Add a new class and name it Rectangle.
-17.	Add the public class modifier to the Rectangle class and have the class inherit from IShape.
-18.	Add two fields to the rectangle class.  Both should be of type double.  Name them height and width.
-19.	Create an parameterized constructor setting the fields above.
-20.	Implement the GetArea function to satisfy the IShape interface.  Use the following equation to the area of a rectangle https://www.mathsisfun.com/area.html.
-21.	Go to the program class.  Create an instance of the IShape interface using the Rectangle class.  Print the area of the rectangle that was declared.  Please format the double to only print two decimal places of the double value.
+1.	Change the line that says `class IShape` to `interface IShape`.
+1.	Create a declaration for a function called GetArea with a double for the return type.
+1.	Go to the Circle class.  Have the circle class inherit from the IShape class.
+1.	Go to the program class.  Create an instance of the IShape interface using the Circle class.  Print the area of the new circle that was declared.  Please format the double to only print two decimal places of the double value.
+1.	Compile and run.  The new instance of IShape circle shall display the area of the circle.  The IShape interface defines how we will interact with the Circle class and any future class that inherit from IShape.
+1.	Find the Circle instance that uses IShape.  On new line type the variable followed by the ‘.’ character.  Notice the Radius property is no longer available.  That is because this instance is of type IShape and not of type Circle.  Delete this line of code.
+1.	Add a new class and name it Triangle.
+1.	Add the public class modifier to the Triangle class and have the class inherit from IShape.
+1.	Compile the application.  An error shall be displayed saying “’Triangle’ does not implement interface.
+1.	Add three fields to the triangle class.  All should be of type double.  Name them sideA, sideB, and sideC.
+1.	Create an parameterized constructor which will set the three fields above.
+1.	Implement the GetArea function to satisfy the IShape interface.  Use the following equation to get the area of the triangle https://www.mathsisfun.com/geometry/herons-formula.html.
+1.	Go to the program class.  Create an instance of the IShape interface using the Triangle class.  Print the area of the triangle that was declared.  Please format the double to only print two decimal places of the double value.
+1.	Compile and run the application.  The application will display the area of circles and triangles.
+1.	Add a new class and name it Rectangle.
+1.	Add the public class modifier to the Rectangle class and have the class inherit from IShape.
+1.	Add two fields to the rectangle class.  Both should be of type double.  Name them height and width.
+1.	Create an parameterized constructor setting the fields above.
+1.	Implement the GetArea function to satisfy the IShape interface.  Use the following equation to the area of a rectangle https://www.mathsisfun.com/area.html.
+1.	Go to the program class.  Create an instance of the IShape interface using the Rectangle class.  Print the area of the rectangle that was declared.  Please format the double to only print two decimal places of the double value.
 
 Please read the following links before proceeding to the next programming section.
 * https://www.tutorialsteacher.com/csharp/csharp-generics
@@ -177,7 +177,7 @@ public int CompareTo(IShape shape)
 5.	Implement the CompareTo method in the Shape class.  This will implement the IComparable<IShape> interface.
 6.	Compile the application.  The application should compile.
 7.	Do the following for the Circle, Triangle, and Rectangle classes:
-a.	Have the classes inherit from the Shape abstract class.
-b.	Remove the Equals and CompareTo methods.
-c.	Have the GetArea function override the abstract declaration.
+	1.	Have the classes inherit from the Shape abstract class.
+	1.	Remove the Equals and CompareTo methods.
+	1.	Have the GetArea function override the abstract declaration.
 8.	Compile and run.  The application’s output shall be identical to the previous section’s output. 
