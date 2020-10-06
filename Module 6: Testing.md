@@ -59,10 +59,10 @@ public void GetAreaTest()
 	Assert.FINDTHECORRECTCOMMAND(expected, actual);
 }
  ```
-6. Don't forget to **comment!** To run this. On the top bar, go to Tests --> Run All Tests. And hopefully there should be green checkboxes.
-6. Write a test that verifies that the area of a circle with radius `2/sqrt(pi)` is what you think it is to verify that your implementation of GetArea for Circle is correct.
-6. Given this, why do you think testing like this is useful? We can automate these testing procedures to run every time someone tries to edit our code. This helps to make sure that the random changes people make don't mess up existing functions/behaviours.
-6. We are not done. NONE of his was TDD. This was just simply demonstrating how to do the most basic of tests. Let us now move onto the basic flow of TDD.
+14. Don't forget to **comment!** To run this. On the top bar, go to Tests --> Run All Tests. And hopefully there should be green checkboxes.
+14. Write a test that verifies that the area of a circle with radius `2/sqrt(pi)` is what you think it is to verify that your implementation of GetArea for Circle is correct.
+14. Given this, why do you think testing like this is useful? We can automate these testing procedures to run every time someone tries to edit our code. This helps to make sure that the random changes people make don't mess up existing functions/behaviours.
+14. We are not done. NONE of his was TDD. This was just simply demonstrating how to do the most basic of tests. Let us now move onto the basic flow of TDD.
 
 ## TDD Methodology ##
 To save time, please read this article, https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80. 
