@@ -1,8 +1,8 @@
 # Test Driven Development #
 
 ## Intro to TDD ##
-What is TDD? TDD is a strategy in software development to write tests for what you want before you write code for what to occur. As general rules, 
-* Write only enough of a unit test to fail
+What is TDD? TDD is a software development strategy to write tests for what we want before we write code for it to occur. As general rules, 
+* Write only enough of a test to fail
 * Write only enough production code to make the failing unit test pass
 
 This seems like an esoteric concept. So before we demonstrate how to do TDD, let us first understand the nature of tests before we delve into TDD itself.
@@ -14,7 +14,7 @@ This lesson will be broken into the following sections
 * Mocking in C#
 
 ## Writing Tests with C# ##
-Before we jump into TDD, it's helpful to understand what testing is first. Airmen coming straight from tech school have no experience with unit testing and it's helpful to create an initial impression of what testing can do. Testing is the process in which programmers assess whether or not a specific feature is operating correctly. Let's do a simple console application to help demonstrate this.
+Before we jump into TDD, it's helpful to understand what testing is first. Airmen coming straight from tech school have no experience with testing and it's helpful to create an initial impression of what testing can do. Testing is the process in which programmers assess whether or not a specific feature is operating correctly. Let's do a simple console application to help demonstrate this.
 
 1. In Visual Studio, open the project that you created back in Module 2. It should be named `Classes`.
 1. After opening that solution, on the File Menu, go to Add --> New Project and search for the MSTest Test Project option for .NET Core.
@@ -38,8 +38,8 @@ namespace ClassesTest
 }
 ```
 
-6. Let us first test whether or not our GetArea function in Triangle.cs is functioning properly. First, we need to add `using Classes;` to the top of our testing class file. This tells Visual Studio to know where to look.
-6. Next, let us do some renaming. This step isn't needed but helps us organize our class files once our testing suite grows large in more complicated projects. Firstly, rename the file `UnitTest1.cs` to `TriangleTest.cs`. Then rename TestMethod1 to `GetAreaTest`. This communicates that every test in the TriangleTest Class *probably* has to do with triangles and that GetAreaTest *probably* tests the GetArea method.
+6. Let us first test whether or not our GetArea function in Triangle.cs is functioning properly. First, we need to add `using Classes;` to the top of our testing class file. This tells Visual Studio where to look.
+6. Next, let us do some renaming. This step isn't needed but helps us organize our class files once our testing suite grows large in more complicated projects. Firstly, rename the file `UnitTest1.cs` to `TriangleTest.cs` by right clicking on it in the solution explorer. Then rename TestMethod1 to `GetAreaTest`. This communicates that every test in the TriangleTest Class *probably* has to do with triangles and that GetAreaTest *probably* tests the GetArea method.
 6. Instantiate a new triangle inside GetAreaTest(). Name it anything you like. 
     1. Doing `var aCuteTriangle = new Triangle()` doesn't work. Why?
     1. Doing `var aCuteTriangle = new Triangle(3, 4, 5)` could get you the error "Is inaccessible due to its protection level." Why would someone get this error?
@@ -66,3 +66,8 @@ public void GetAreaTest()
 
 ## TDD Methodology ##
 To save time, please read this article, https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80. 
+
+THe article above references Javascript but TDD in C# uses the same processes. When you write TDD code you 
+
+Under Construction
+
